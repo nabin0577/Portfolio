@@ -456,35 +456,3 @@ function updateFooterYear() {
 // Initialize year update
 updateFooterYear();
 
-
-/* ============================================
-   HOW TO USE & CUSTOMIZE
-   ============================================
-   
-   1. EDIT PERSONAL INFO:
-      - Open index.html
-      - Look for "EDIT HERE" comments
-      - Replace placeholder text with your details
-      
-   2. ADD YOUR PHOTOS:
-      - Replace src="https://via.placeholder.com/..." 
-        with your actual image paths
-      - Recommended: Use 400x400px for profile images
-      
-   3. RESUME PDF:
-      - Add your resume.pdf to the same folder
-      - Or update the href in the Download Resume button
-      
-   4. SOCIAL LINKS:
-      - Update href attributes with your actual URLs
-      
-   5. FOR EMAIL FUNCTIONALITY:
-      - Option A: Use a service like Formspree
-      - Option B: Use mailto: link (uncomment in script.js)
-      - Option C: Use a backend service
-      
-   6. TO RUN LOCALLY:
-      - Simply open index.html in a browser
-      - Or use a local server like Live Server in VS Code
-      
-   ============================================ */
