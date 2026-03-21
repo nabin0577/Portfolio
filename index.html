@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Personal Website</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         LOADING ANIMATION
+    ============================================= -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">EC</a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Dark/Light Mode Toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--HERO SECTION (HOME)-->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Eklavya Chaudhary</span>
+                </h1>
+                
+                <!-- WELCOME HERE: Your Tagline (Typing Effect) -->
+                <p class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </p>
+                
+                <!--  Short tagline description -->
+                <p class="hero-description">
+                    Building innovative digital solutions that solve real-world problems. Passionate about transforming ideas into clean and efficient code.
+                </p>
+                
+                <!-- Hero Buttons: Download | Contact | View Projects -->
+                <div class="hero-buttons">
+                    <a href="Eklavya_Chaudhary_Resume.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-briefcase"></i> View Projects
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Profile Photo -->
+            <div class="hero-image">
+                <div class="profile-wrapper">
+                    <img src="picture/me.jpg" alt="Profile Photo" class="profile-img" id="profileImg">
+                    <div class="profile-ring"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Get to know me</p>
+            </div>
+            
+            <div class="about-content">
+                <!-- Photo Section (moved to left) -->
+                <div class="about-image">
+                    <!-- EDIT HERE: Replace with your detailed photo -->
+                    <img src="picture/me2.jpg" alt="About Me" class="about-img">
+                </div>
+                <!-- Bio & Details -->
+                <div class="about-info">
+                    <h3 class="about-heading">Eklavya Chaudhary</h3>
+                    <p class="about-text">
+                        Passionate about software development, cloud computing, and web development, I enjoy building projects and exploring new technologies. Skilled in C++, Python, JavaScript, and modern web tools, I aim to grow into a professional Software Engineer creating impactful solutions.
+                    </p>
+                    <p class="about-text">
+                       I enjoy turning ideas into practical solutions through code and continuously improving my technical skills.
+As a curious learner and problem solver, I am always eager to explore new technologies and take on challenging projects.
+                    </p>
+                    
+                    <!-- Social Links -->
+                    <div class="about-social">
+                        <a href="https://www.linkedin.com/in/eklavya-chy/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Eklavya0102" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                       
+                        <a href="https://www.instagram.com/eklavya0_4/?hl=en" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- ============================================
+         QUALIFICATIONS SECTION (EDUCATION)
+    ============================================= -->
+    <section id="qualifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Journey</span></h2>
+                <p class="section-subtitle">Education & Qualifications</p>
+            </div>
+            
+            <!-- Timeline Layout -->
+            <div class="timeline">
+                
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">(In near future)</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Master's Degree in Computer Science</h3>
+                        <p class="timeline-institution">MIT , USA</p>
+                        <p class="timeline-description">
+                         <!-- will update soon -->
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - 2029</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">B.Tech CSE (Core)</h3>
+                        <p class="timeline-institution">SRM-University,Tiruchhirappalli</p>
+                        <p class="timeline-description">
+                             Will Graduate in 2029. Focused on cloud computing, web development, databases,
+                            and software engineering principles.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">High School</h3>
+                        <p class="timeline-institution">KMC-Lalitpur,Nepal</p>
+                        <p class="timeline-description">
+                           Passed with Major in Science(PCMB)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Selected projects and showcases</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="card-title">Smart University System</h3>
+                    <p class="card-subtitle">Project, 2026</p>
+                    <p class="card-description">ERP system using C++ and OoPs concept...</p>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="card-title">Detention Saver</h3>
+                    <p class="card-subtitle">Project, 2025</p>
+                    <p class="card-description">A dashboard for student to track their attendance and calculate how many upcomming classes they can safely skip inorder to not fall into detention</p>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="card-title">Smart Attendance System</h3>
+                    <p class="card-subtitle">Prototype, 2024</p>
+                    <p class="card-description">Face Recognation system using pyton to detect face in bulk quantity and mark attendance...</p>
+                </div>
+                <div class="project-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="card-title">Student Teacher Portal</h3>
+                    <p class="card-subtitle">Prototype, 2024</p>
+                    <p class="card-description">A responsive Web portal with Firebase integration which enables the teacher to post stuffs to be sent to student and student to access thoes. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACHIEVEMENTS SECTION (Timeline)
+    ============================================= -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & <span class="highlight">Certificates</span></h2>
+                <p class="section-subtitle">Awards & Certifications</p>
+            </div>
+            <div class="timeline" style="max-width: 800px; margin: 0 auto;">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">March 18th 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Azure Fundamentals</h3>
+                       
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">March 16th 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Introduction to Cloud Computing</h3>
+                       
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">March 12th 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">JP Morgan SWE Job Simulation</h3>
+                       
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">March 15th </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Drone Workshop</h3>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">March 14th 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Curve Fitting Onramp</h3>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">20+ </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Hackathon Participation</h3>
+                        <p class="timeline-description">Won prizes participating in Various Hackathons </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">4th November 2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Overview of Geocomputation and Geo-web Services(ISRO-IIRS-Dehradhun)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+    ============================================= -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Technical & Soft Skills</p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Technical Skills -->
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-code"></i> Technical Skills
+                    </h3>
+                    
+                    <!-- EDIT HERE: Modify skill names and percentages -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript </span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">C,C++,Python,Flutter,Swift</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Database (SQL/NoSQL/Firebase)</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-users"></i> Soft Skills
+                    </h3>
+                    
+                    <!-- EDIT HERE: Modify soft skills -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Communication</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Problem Solving</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Teamwork</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Time Management</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Adaptability</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+    ============================================= -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">Let's Connect & Collaborate</p>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Talk</h3>
+                    <p class="contact-text">
+                    If you have any questions, collaboration opportunities, or would just like to say hello, don’t hesitate to reach out. I’m always open to connecting with new people.
+                    </p>
+                    
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Email</span>
+                                <!-- EDIT HERE: Your email -->
+                                <a href="chaudharyeklavya101@gmail.com" class="contact-value">
+                                   chaudharyeklavya101@gmail.com
+                                </a>
+                                <a href="01eklavya@gmail.com" class="contact-value">
+                                   01eklavya@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Phone</span>
+                                <!-- EDIT HERE: Your phone number -->
+                                <a href="tel:+1234567890" class="contact-value">+91 9122859946 
+                                    <br>+977 9702340405 (Nepal/Whatsapp)
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Current Location</span>
+                                <span class="contact-value">school of Computing(FE&T), SRM University,Tiruchhirappali</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="contact-social">
+                        <h4 class="social-heading">Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/eklavya-chy/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Eklavya0102" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                       
+                        <a href="https://www.instagram.com/eklavya0_4/?hl=en" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mreyjyjw" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" 
+                                   placeholder="First & Last" required>
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" 
+                                   placeholder="xyz@example.com" required>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" 
+                                   placeholder="Subject" required>
+                            <span class="form-error" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" 
+                                      placeholder="Your message here..." rows="5" required></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    
+                    <!-- Success/Error Messages -->
+                    <div class="form-message" id="formMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                 <div class="footer-brand">
+                    <h3 class="footer-logo">Eklavya .C</h3>
+                    <p class="footer-tagline">"Exploring the mind, Coding the Future"</p>
+                </div>
+                 <div class="footer-copyright">
+                    <p>&copy; 2026 Eklavya Chaudhary All Rights Reserved</p>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://www.linkedin.com/in/eklavya-chy/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Eklavya0102" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/eklavya0_4/?hl=en" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/Eklavya888" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SCROLL TO TOP BUTTON
+    ============================================= -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
