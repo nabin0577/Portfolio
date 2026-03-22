@@ -1064,7 +1064,7 @@ a.contact-value:hover {
    ============================================ */
 .footer {
     background: var(--bg-secondary);
-    padding: 60px 0 20px;
+    padding: 40px 0 10px;
     border-top: 1px solid var(--border-color);
 }
 
@@ -1072,7 +1072,7 @@ a.contact-value:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Equal-width columns for a clean grid layout */
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     align-items: start;
 }
 .footer-copyright {
