@@ -1064,38 +1064,37 @@ a.contact-value:hover {
    ============================================ */
 .footer {
     background: var(--bg-secondary);
-    padding: 40px 0 10px;
+    padding: 30px 0 5px;
     border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Equal-width columns for a clean grid layout */
-    gap: 40px;
-    margin-bottom: 15px;
-    align-items: start;
-}
-.footer-copyright {
-    justify-self: center;
-    text-align: center;
-}
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 1fr; /* Brand, Connect,Copyright */
+        gap: 50px;
+        margin-bottom: 15px;
+        align-items: center;
+    }
 .footer-left {
-    display: grid;
-    grid-auto-rows: auto;
-    gap: 20px;
-}
+        display: grid;
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
 .footer-right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+}
+
+/* Revert: center column content is handled by natural flow */
+.footer-copyright {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .footer-brand {
-    justify-self: start;
     text-align: left;
-}
-.footer-social {
-    justify-self: center;
-    text-align: center;
 }
 
 /* Ensure better mobile stacking */
@@ -1144,7 +1143,6 @@ a.contact-value:hover {
 .footer-social-icons {
     display: flex;
     gap: 12px;
-    justify-content: center;
 }
 
 .footer-social-icons a {
