@@ -2,8 +2,8 @@
 
 This is my **personal portfolio website** built using **HTML, CSS, and JavaScript** to showcase my skills, projects, achievements, and professional journey. The website is designed with a modern UI and responsive layout to ensure a smooth experience across all devices.
 
-**Live Website:** https://your-portfolio-link.vercel.app  
-**GitHub Repository:** https://github.com/your-username/your-repo-name
+**Live Website:** https://eklavya101.vercel.app  
+**GitHub Repository:** https://github.com/eklavya0102/portfolio
 
 ---
 
