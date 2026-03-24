@@ -972,7 +972,7 @@ a.contact-value:hover {
 /* Contact Form */
 .contact-form-wrapper {
     background: var(--card-bg);
-    padding: 24px;
+    padding: 16px;
     border-radius: var(--radius-lg);
     box-shadow: var(--card-shadow);
     max-width: 520px;
@@ -983,13 +983,13 @@ a.contact-value:hover {
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .form-label {
@@ -999,7 +999,7 @@ a.contact-value:hover {
 }
 
 .form-input {
-    padding: 14px 18px;
+    padding: 10px 12px;
     border: 2px solid var(--border-color);
     border-radius: var(--radius);
     background: var(--bg-secondary);
@@ -1021,7 +1021,7 @@ a.contact-value:hover {
 
 .form-textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 100px;
 }
 
 .form-error {
@@ -1033,13 +1033,13 @@ a.contact-value:hover {
 .btn-submit {
     width: 100%;
     justify-content: center;
-    padding: 16px;
+    padding: 12px 0;
     font-size: 1.1rem;
 }
 
 .form-message {
     margin-top: 20px;
-    padding: 15px;
+    padding: 12px;
     border-radius: var(--radius);
     text-align: center;
     display: none;
@@ -1058,7 +1058,6 @@ a.contact-value:hover {
     color: #ef4444;
     border: 1px solid #ef4444;
 }
-
 /* ============================================
    FOOTER
    ============================================ */
