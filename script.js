@@ -89,9 +89,9 @@ function initTypingEffect() {
     
     // EDIT HERE: Change your typing text array
     const textArray = [
-        'Aspiring SWE',
+        'Aspiring Bio-Medical Engineer',
         'Student',
-        'Developer',
+        'Researcher',
         'Learner'
     ];
     
@@ -449,7 +449,7 @@ function updateFooterYear() {
     const footerYear = document.querySelector('.footer-bottom p');
     if (footerYear) {
         const currentYear = new Date().getFullYear();
-        footerYear.textContent = `© ${currentYear} Himesh Kumar Kashyap. All Rights Reserved.`;
+        footerYear.textContent = `© ${currentYear} Nabin Paswan. All Rights Reserved.`;
     }
 }
 
